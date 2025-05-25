@@ -4,4 +4,14 @@ transformers
 deepspeed
 accelerate
 webdataset
-git+https://github.com/huggingface/diffusers.git
+diffusers
+sentencepiece==0.2.0
+protobuf==5.27.3
+numpy<2
+einops==0.8.0
+huggingface-hub
+supervision
+cog
+controlnet-aux
+xformers
+python-dotenv
