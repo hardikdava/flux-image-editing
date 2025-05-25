@@ -12,6 +12,9 @@ This project tries to teach [Flux.1 Dev](https://huggingface.co/black-forest-lab
 >[!IMPORTANT]
 > Since we don't have the official Flux Control training details available, this project should be considered experimental and we welcome contributions from the community to make it better 🤗
 
+
+Run inference directly on [replicate](https://replicate.com/hardikdava/flux-image-editing).
+
 ## Setup
 
 Install the dependencies from [`requirements.txt`](./requirements.txt) and perform any other configuration that might be needed.

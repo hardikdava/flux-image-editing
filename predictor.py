@@ -57,9 +57,9 @@ class Predictor(BasePredictor):
         ),
         guidance_scale: float = Input(
                 description="Guidance scale",
-                default=3.5,
+                default=30,
                 ge=0,
-                le=30
+                le=50
         ),
         num_inference_steps: int = Input(
                 description="Number of inference steps",
