@@ -15,3 +15,4 @@ cog
 controlnet-aux
 xformers
 python-dotenv
+peft
