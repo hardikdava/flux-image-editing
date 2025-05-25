@@ -1,5 +1,6 @@
 from typing import List
 import time
+import os
 import subprocess
 import random
 
@@ -32,7 +33,8 @@ def download_weights(url, dest, file=False):
 
 class Predictor(BasePredictor):
     def setup(self) -> None:
-        self.download_models(model_name="flux_dev")
+        if not os.path.exists(MODEL_CACHE):
+            download_weights(MODEL_URL, ".")
         edit_transformer = FluxTransformer2DModel.from_pretrained(EDIT_MODEL, torch_dtype=torch.bfloat16)
         self.pipeline = FluxControlPipeline.from_pretrained(
             "black-forest-labs/FLUX.1-dev", transformer=edit_transformer, torch_dtype=torch.bfloat16
